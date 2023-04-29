@@ -291,7 +291,7 @@ This lab shows you how to write yaml to create the queue manager, application qu
 
 ### Test the deployment
 
-1. In a terminal window navigate to */home/ibmuser/MQonCP4I/streamq/test* directory. You will find three files (and additional files for TLS):
+1. In a terminal window navigate to */home/student/MQonCP4I/streamq/test* directory. You will find three files (and additional files for TLS):
 
 	* CCDT.JSON
 	* getMessage.sh

@@ -69,6 +69,28 @@ The lab guide assumes you are using the RHEL desktop VM from the IBM Asset Repo.
 	
 	You can now close the gedit utility.
 	
+	### Login to OCP Console to get login token
+
+1. In OCP console, click the drop-down next to your username and select "Copy Login Command".
+
+	![](./images/image115.png)
+
+1. A new browser tab opens. Click the *Display Token* hyperlink.
+
+	![](./images/image116.png)
+	
+1. Copy the command under "Log in with this token".
+
+	![](./images/image117.png)
+	
+1. Open a terminal window and paste the command into the terminal and hit enter which logs you into the cluster. Enter the following command to change to your namespace. Make sure to substitute 00 with your student number.
+
+	```
+	oc project mq00
+	```
+
+	![](./images/image118.png)
+	
 1. Run the ha-install.sh script with the following command:
 
 	```sh
@@ -90,22 +112,9 @@ The lab guide assumes you are using the RHEL desktop VM from the IBM Asset Repo.
 ## Explore the queue manager 
 
 ### MQ Console
-
-The hyperlink to the OpenShift Console for the cluster should be included in your email. Navigate to the OCP console now. 
+ To access the queue manager and the MQ Console, you need to go to the CP4I Platform Navigator. 
  
-1. The OCP Console opens at the *Overview* page. You can explore the various information about the cluster details here. When ready, click *Projects* and select your project **chopper5** (Use you assigned namespace).
-
-	![](./images/image34a.png)		
-1. To access the queue manager and the MQ Console, you need to open the CP4I Platform Navigator. Click the drop-down for *Networking* and select *Routes*. Type *Integration* in the filter, then click the location hyplerlink for route **integration-quickstart-pn**. 
-
-	 ![](./images/image35a.png)
-	 
-	 Accept any security warnings and continue.
-	 
-1. When presented with the "Log in to IBM Automation", click *Enterprise LDAP*. Enter the userid and password that you received in your email and click *Login*. Remember to use your credentials, not the ones in the screen shot.
-
-	![](./images/image38a.png)	
-1. Under *Messaging* you will see the namespace **chopper5** and the **mq05ha** queue manager. Click **mq05ha**.
+1. From the Platform Navigator Under *Messaging* you will see all your Queue Managers running for your namespace and the **mq05ha** queue manager. Click **mq05ha**.
 
 	![](./images/image39a.png)
 	
