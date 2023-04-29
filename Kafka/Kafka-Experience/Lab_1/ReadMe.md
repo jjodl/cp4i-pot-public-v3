@@ -232,8 +232,12 @@ You should already have an Account setup from the last section.
 
 4\. Now we will see the configuration screen for the Kafka connector. 
  Now select the topic for your userid that you created in the previous section.  For the Group ID, we will use your userid as the unique ID.  In this case, we are using chopper1.
- **Note:** Make sure you use your userid for this.  
- **Note:** For the Message offset you can select the latest which will start to consume messages at that point.   If you select eariler then you will get all messages that had been produced already for the offset.
+
+ **Note:** Make sure you use your userid for this. 
+
+ **Note:** For the **Message offset** you can select the latest which will start to consume messages at that point.   If you select eariler then you will get all messages that had been produced already for the offset.
+ 
+ **Do not leave Message offset blank**
 
 ![alt text][des17]
 
@@ -241,8 +245,7 @@ You should already have an Account setup from the last section.
 
 ![alt text][des18]
 
-6\. Now click on the blue **+** and scroll down to the **IBM MQ** connector or just start typing in the search field.  Select the **Put message on a queue**. 
-If you don't have an Account already setup for your MQ connector **click on Connect**
+6\. Select the **Put message on a queue**. If you don't have an Account already setup for your MQ connector **click on Connect**
 If you have a Account already setup skip to **Step XX**
 
 ![alt text][des19]
@@ -250,7 +253,11 @@ If you have a Account already setup skip to **Step XX**
 7\. Now you will fill in the connection details from the MQ-Pre-Lab where you should have saved your **Queue Manager Name** and **Hostname**.
   
 * Enter the QMgr name
-* For the QMgr host we will use the **(service-name)**
+* For the QMgr host we will use the following format:
+
+  qmgrxx-ibm-mq.\<userid>.svc
+
+  xx = userid number
 * Port is 1414
 * Channel SYSTEM.DEF.SVRCONN
 
