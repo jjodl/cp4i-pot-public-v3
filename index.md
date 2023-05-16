@@ -26,17 +26,13 @@ We will cover all the various components that are part of Cloud Pak for Integrat
 - Easily portable to other clouds, since this can run on RedHat OpenShift. This allows you to install and operate the Pak identically across multiple cloud vendors.  
 
 ## Lab section:
-**For the POT May 1st to May 2nd ** we will be using the **mace and melch** clusters. 
+**For the POT May 17th and May 18th  ** we will be using the **mace** clusters. 
 
 This is the **OCP console** and you will use the userid and password provided to you by the instructor. <br>**(Suggest right clicking and opening in new tab in the VDI)**<br>
 [https://console-openshift-console.apps.mace.coc-ibm.com/](https://console-openshift-console.apps.mace.coc-ibm.com/)
 
-[https://console-openshift-console.apps.melch.coc-ibm.com/](https://console-openshift-console.apps.melch.coc-ibm.com/)
-
 For the **Platform Navigator** use this link and select Enterprise LDAP for authentication type, and you will use the userid and password provided to you by the instructor. <br>**(Suggest right clicking and opening in new tab in the VDI)**<br>
 [https://cpd-cp4i.apps.mace.coc-ibm.com/](https://cpd-cp4i.apps.mace.coc-ibm.com/)
-
-[https://cpd-cp4i.apps.melch.coc-ibm.com/](https://cpd-cp4i.apps.melch.coc-ibm.com/)
 
 
 Before starting the labs you should review the lab environment and the use of the VDI desktop you will be using along with the OCP cluster to complete the labs.<br>
